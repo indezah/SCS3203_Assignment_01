@@ -6,7 +6,7 @@ if(len(sys.argv) != 2):
     sys.exit()
     
 # Define the server's IP address and port
-SERVER_IP = '127.0.0.1'  # Loopback address for localhost
+SERVER_IP = socket.gethostname()  # Loopback address for localhost
 SERVER_PORT = int(sys.argv[1])
 
 # Create a socket object
